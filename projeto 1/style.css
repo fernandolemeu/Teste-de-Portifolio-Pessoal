@@ -1,0 +1,131 @@
+:root {
+   --branco-principal: #FFFFFF;
+   --cinza-secundario: #C0C0C0;
+   --botao-azul: #167BF7;
+   --cor-de-fundo: #00030c;
+   --fonte-principal: 'Poppins', sans-serif;
+}
+
+body {
+   margin: 0;
+   font-family: var(--fonte-principal);
+   background-color: var(--cor-de-fundo);
+   color: var(--branco-principal);
+}
+
+header {
+   background-color: #001427;
+   padding: 20px 0;
+   text-align: center;
+}
+
+header h1 {
+   margin: 0;
+   font-size: 2.5em;
+   color: var(--branco-principal);
+}
+
+nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 20px 0 0;
+}
+
+nav ul li {
+   display: inline;
+   margin: 0 15px;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: var(--branco-principal);
+   font-weight: 500;
+   transition: color 0.3s;
+}
+
+nav ul li a:hover {
+   color: var(--botao-azul);
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 50px 20px;
+   text-align: center;
+}
+
+.container_titulo {
+   font-size: 2em;
+   margin-bottom: 20px;
+   position: relative;
+   display: inline-block;
+}
+
+.container_titulo::after {
+   content: "";
+   display: block;
+   width: 50px;
+   height: 3px;
+   background: var(--botao-azul);
+   margin: 10px auto 0;
+}
+
+.container_imagem_texto {
+   position: relative;
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.container_imagem {
+   width: 400px;
+   height: auto;
+   border-radius: 50%;
+}
+
+.imagem_dois {
+   display: block;
+   margin: 20px auto;
+   width: 90%;
+   max-width: 800px;
+   height: auto;
+}
+
+.container_botao {
+   background-color: var(--botao-azul);
+   border-radius: 5px;
+   padding: 1em 2em;
+   color: var(--branco-principal);
+   text-decoration: none;
+   margin-bottom: 1em;
+   display: inline-block;
+   transition: background-color 0.3s, transform 0.3s;
+}
+
+.container_botao:hover {
+   background-color: var(--botao-azul);
+   border-radius: 5px;
+   padding: 1em 2em;
+   color: var(--branco-principal);
+   text-decoration: none;
+   margin-bottom: 1em;
+   display: inline-block;
+   transition: background-color 0.3s, transform 0.3s;
+}
+
+#skills ul, #contact ul {
+   list-style: none;
+   padding: 0;
+}
+
+#skills ul li, #contact ul li {
+   background-color: rgba(255, 255, 255, 0.1);
+   margin: 10px 0;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+#experience p, #education p {
+   background-color: rgba(255, 255, 255, 0.1);
+   padding: 20px;
+   border-radius: 5px;
+}
